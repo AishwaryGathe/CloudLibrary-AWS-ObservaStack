@@ -1,6 +1,30 @@
-# **📘 Cloud Library — Modern Full-Stack Observability & Monitoring System**
+# ** Cloud Library — Modern Full-Stack Observability & Monitoring System**
 
-## **🔎 What This Project Is About**
+<p align="center">
+
+  ![AWS](https://img.shields.io/badge/AWS-Cloud%20Infrastructure-F79400?logo=amazonaws&logoColor=white)
+  ![EC2](https://img.shields.io/badge/AWS-EC2-EC7211?logo=amazonec2&logoColor=white)
+  ![VPC](https://img.shields.io/badge/AWS-VPC-527FFF?logo=amazonaws&logoColor=white)
+  ![SSM](https://img.shields.io/badge/AWS-SSM%20Session%20Manager-3B3B3B?logo=amazonaws&logoColor=white)
+
+  ![Prometheus](https://img.shields.io/badge/Prometheus-Monitoring-E6522C?logo=prometheus&logoColor=white)
+  ![Alertmanager](https://img.shields.io/badge/Alertmanager-Alerts-E67E22)
+  ![Grafana](https://img.shields.io/badge/Grafana-Dashboard-F46800?logo=grafana&logoColor=white)
+  ![Node Exporter](https://img.shields.io/badge/Node%20Exporter-System%20Metrics-000000)
+
+  ![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react&logoColor=black)
+  ![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js&logoColor=white)
+  ![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql&logoColor=white)
+
+  ![Slack](https://img.shields.io/badge/Slack-Alerts-4A154B?logo=slack&logoColor=white)
+  ![Monitoring](https://img.shields.io/badge/Monitoring-Enabled-brightgreen)
+  ![Made With Love](https://img.shields.io/badge/Made%20By-Cloud%20Engineer-blueviolet)
+
+</p>
+
+
+
+## ** What This Project Is About**
 
 Cloud Library is a fully deployed **cloud-native monitoring system** built around a real production-style architecture.
 The project demonstrates how modern companies monitor:
@@ -18,7 +42,7 @@ This project reflects **actual DevOps/SRE workflows** used in tech companies whe
 
 ---
 
-# **🧩 What Services Are Used in This Project**
+# ** What Services Are Used in This Project**
 
 ### **1. AWS EC2**
 
@@ -115,9 +139,9 @@ In production, dashboards are essential for decision-making.
 
 ---
 
-# **🏗 Real-Life Scenarios Simulated in This Project**
+# ** Real-Life Scenarios Simulated in This Project**
 
-### **📌 1. CPU Spike / Server Overload**
+### ** 1. CPU Spike / Server Overload**
 
 If CPU usage crosses the defined threshold for a sustained period, an alert fires.
 
@@ -129,7 +153,7 @@ Real-world use case:
 
 ---
 
-### **📌 2. Sudden Traffic Spike (Page Hits Alert)**
+### ** 2. Sudden Traffic Spike (Page Hits Alert)**
 
 The backend exposes a custom Prometheus metric tracking page hits.
 If someone hits the page rapidly (bot or aggressive traffic), an alert triggers.
@@ -143,7 +167,7 @@ Real-world use case:
 
 ---
 
-### **📌 3. Infrastructure Health Monitoring**
+### ** 3. Infrastructure Health Monitoring**
 
 Node Exporter monitors:
 
@@ -160,7 +184,7 @@ Real-world use case:
 
 ---
 
-### **📌 4. Multi-Instance Auto Discovery (AWS EC2 Discovery)**
+### ** 4. Multi-Instance Auto Discovery (AWS EC2 Discovery)**
 
 Prometheus automatically detects EC2 instances with a specific tag like `Role = backend`.
 
@@ -175,7 +199,7 @@ No need to manually update IPs.
 
 ---
 
-### **📌 5. Centralized Monitoring Server**
+### ** 5. Centralized Monitoring Server**
 
 A dedicated Monitoring EC2 runs:
 
@@ -188,7 +212,7 @@ This mirrors how real SRE teams operate with a **central monitoring hub**.
 
 ---
 
-### **📌 6. Slack Alerting Workflow**
+### ** 6. Slack Alerting Workflow**
 
 Alerts are pushed directly into a Slack channel.
 
@@ -201,7 +225,7 @@ This simulates:
 
 ---
 
-# **🌐 High-Level Architecture**
+# ** High-Level Architecture**
 
 ```
                     ┌──────────── Slack Alerts ────────────┐
@@ -222,7 +246,7 @@ This simulates:
 
 ---
 
-# **🎯 Why This Project Matters**
+# ** Why This Project Matters**
 
 This project simulates **exactly how modern DevOps, SRE, and Infrastructure teams monitor production systems**.
 
@@ -243,7 +267,7 @@ This is the type of setup used at:
 
 ---
 
-# **🏁 Final Notes**
+# ** Final Notes**
 
 This README gives a complete **conceptual and architectural understanding** of the entire monitoring stack:
 
