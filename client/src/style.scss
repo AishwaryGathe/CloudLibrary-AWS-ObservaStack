@@ -1,0 +1,129 @@
+/* Cloud Library — Page & Component styles */
+.app {
+  padding: 20px 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.cl-btn {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.cl-btn-primary {
+  background: #2563eb;
+  color: #fff;
+}
+.cl-btn-primary:hover {
+  background: #1e4fd1;
+}
+.cl-btn-danger {
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  color: #b91c1c;
+}
+.cl-btn-outline {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e3a8a;
+}
+.books-list {
+  margin-top: 20px;
+}
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.book-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.book-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+.book-body {
+  padding: 16px;
+}
+.book-body h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.book-body p {
+  padding: 0 0 10px 0;
+  color: #64748b;
+  font-size: 14px;
+}
+.book-price {
+  color: #2563eb;
+  font-weight: 600;
+}
+.form-container {
+  max-width: 450px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+}
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #2563eb;
+  text-align: center;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+.form-control label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #475569;
+  font-weight: 600;
+}
+.form-control input,
+.form-control textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 15px;
+  outline: none;
+}
+.form-control input:focus,
+.form-control textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+.form-container button {
+  width: 100%;
+  padding: 12px;
+}
+@media (max-width: 1024px) {
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .books-grid {
+    grid-template-columns: 1fr;
+  }
+  .book-card img {
+    height: 180px;
+  }
+  .form-container {
+    padding: 20px;
+  }
+}

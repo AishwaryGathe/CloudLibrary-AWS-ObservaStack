@@ -1,0 +1,100 @@
+/* Cloud Library — Global Styles (index.css) */
+:root {
+  --bg: #f7fbff;
+  --surface: #fff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --accent: #2563eb;
+  --container: 1200px;
+  --radius: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Segoe UI, Roboto, Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+.cl-container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 18px;
+}
+.cl-header {
+  background: var(--surface);
+  border-bottom: 1px solid #e2e8f0;
+  padding: 16px 0;
+  margin-bottom: 20px;
+}
+.cl-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cl-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.cl-nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+.cl-main {
+  padding: 20px 0 40px 0;
+}
+.hero {
+  background: linear-gradient(to bottom, #fff, #f0f9ff);
+  padding: 28px;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+.hero h2 {
+  font-size: 28px;
+}
+.hero p {
+  margin-top: 8px;
+  color: var(--muted);
+}
+.cl-footer {
+  background: var(--surface);
+  border-top: 1px solid #e2e8f0;
+  padding: 14px 0;
+  text-align: center;
+  margin-top: 40px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.info-box,
+.error-box {
+  padding: 14px;
+  border-radius: var(--radius);
+  margin-bottom: 14px;
+}
+.info-box {
+  background: #dbeafe;
+  border-left: 4px solid var(--accent);
+}
+.error-box {
+  background: #fee2e2;
+  border-left: 4px solid #ef4444;
+}
+@media (max-width: 1024px) {
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .cl-header-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero h2 {
+    font-size: 22px;
+  }
+}
